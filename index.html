@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2G1C - Two Guys One Code</title>
+    <style>
+        /* Paleta de cores baseada na logo */
+        :root {
+            --bg-color: #26292E;
+            --accent-gold: #C8A97E;
+            --accent-blue: #33415C;
+            --text-light: #E8E8E8;
+            --text-muted: #A0A5B0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid var(--accent-gold);
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .brand img {
+            height: 60px;
+            border-radius: 5px;
+        }
+
+        .brand h1 {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #1a1c20 100%);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .hero h2 span {
+            color: var(--accent-gold);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--accent-blue);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            border: 2px solid var(--accent-blue);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+        }
+
+        /* Seção de Serviços */
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 80px 5%;
+            background-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .card {
+            background-color: var(--bg-color);
+            padding: 40px 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            border-top: 4px solid var(--accent-blue);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--accent-gold);
+        }
+
+        .card h3 {
+            color: var(--accent-gold);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #151619;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(200, 169, 126, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <!-- Referenciando a logo fornecida -->
+            <img src="2g1c_logo_2.jpg" alt="Logo 2G1C">
+            <h1>2G1C</h1>
+        </div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Criando o futuro através de <span>Código</span></h2>
+        <p>Somos a Two Guys One Code. Uma startup focada no desenvolvimento de softwares de alta performance, arquitetura escalável e soluções sob medida para o seu negócio.</p>
+        <a href="#contato" class="btn">Inicie seu Projeto</a>
+    </section>
+
+    <section id="solucoes" class="services">
+        <div class="card">
+            <h3>Desenvolvimento Web</h3>
+            <p>Criamos sistemas web responsivos, rápidos e seguros, utilizando as melhores práticas e arquiteturas do mercado.</p>
+        </div>
+        <div class="card">
+            <h3>Soluções Customizadas</h3>
+            <p>Entendemos o seu problema e desenvolvemos softwares sob medida que automatizam processos e escalam com sua empresa.</p>
+        </div>
+        <div class="card">
+            <h3>Arquitetura de Software</h3>
+            <p>Estruturamos a base tecnológica do seu produto para suportar crescimento constante sem perda de performance.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 2G1C - Two Guys One Code. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
